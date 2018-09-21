@@ -1,0 +1,46 @@
+@import 'variables';
+@import 'mixins';
+
+/*-----------------------------------------------------
+|	Content - #main
+-----------------------------------------------------*/
+.home-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  #main {
+    padding: 20px;
+
+    .content {
+      text-align: center;
+
+      h1 {
+        font-family: $font-stack-primary;
+        font-size: 4em;
+        font-weight: 400;
+        color: #000;
+        line-height: 1;
+        margin: 0;
+        @include animationDelay(.3s);
+        @include animationDuration(1s);
+      }
+      
+      .line {
+        margin: 1.25rem auto;
+      }
+
+      h4 {
+        color: $gray;
+        font-family: $font-stack-primary;
+        font-size: 1.3em;
+        font-weight: 400;
+        margin: 0;
+        margin-bottom: 1em;
+        @include animationDelay(.75s);
+        @include animationDuration(1.25s);
+      }
+    }
+  }
+}

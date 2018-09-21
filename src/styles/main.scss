@@ -1,0 +1,143 @@
+@import 'variables';
+@import 'mixins';
+html,
+body {
+  background-color: #fff;
+  // height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: $font-stack-primary;
+  -webkit-overflow-scrolling: touch;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: $green;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+
+  &:hover, &:active, &:focus {
+    color: darken($green, 10%);
+  }
+}
+
+ul {
+  line-height: 1.6;
+  margin-left: 1.25rem;
+  margin-bottom: 1rem;
+  list-style-position: outside;
+  padding: 0;
+}
+
+.line {
+  height: .2rem;
+  border: none;
+  width: 13vw;
+  background-color: $green;
+  box-shadow: none;
+  @include animationDelay(.5s);
+  @include animationDuration(1s);
+}
+
+.btn {
+	color: #fff;
+	padding: 10px 25px;
+	border: 2px solid #fff;
+	display: inline-block;
+	transition: color ease-in .3s;
+	transition: background-color ease-in .3s;
+
+	&:hover, &:focus {
+		background: #fff;
+		color: $green;
+	}
+}
+
+/*-----------------------------------------------------
+|	Shared Components 
+-----------------------------------------------------*/
+.social-list {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  @include animationDelay(.875s);
+  @include animationDuration(1.5s);
+
+  li {
+    display: inline-block;
+    margin: 0 1em;
+
+    a {
+
+      i {
+        color: $green;
+        font-size: 1em;
+        vertical-align: middle;
+        width: 1.75rem;
+        display: inline-block;
+      }
+
+      span {
+        color: $gray;
+        font-family: $font-stack-primary;
+        font-size: 1em;
+      }
+    }
+  }
+}
+
+/*-----------------------------------------------------
+|	Navigation 
+-----------------------------------------------------*/
+#site-navigation {
+  position: fixed;
+  right: 40px;
+  top: 60px;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  // visibility: hidden;
+
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      list-style-type: none;
+      a {
+        display: block;
+        color: $gray;
+        text-decoration: none;
+
+        span {
+          color: $gray;
+          display: block;
+          position: relative;
+          padding: 2px 0;
+          &:before,
+          &:after {
+            content: '';
+            position: absolute;
+            width: 0%;
+            height: 3px;
+            top: 50%;
+            margin-top: -0.5px;
+            background: $green;
+          }
+          &:hover:before {
+            background: $green;
+            width: 105%;
+            margin-left: -6%;
+            transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+          }
+          &:hover:after {
+            background: transparent;
+            width: 100%;
+            transition: 0s;
+          }
+        }
+      }
+    }
+  }
+}

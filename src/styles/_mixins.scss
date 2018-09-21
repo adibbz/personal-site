@@ -1,0 +1,17 @@
+@mixin borderRadius ($radius: 5px) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin animationDelay($delay: .5s) {
+  -webkit-animation-delay: $delay;
+  -moz-animation-delay: $delay;
+  animation-delay: $delay;
+}
+
+@mixin animationDuration($duration: .5s) {
+  -webkit-animation-duration: $duration;
+  -moz-animation-duration: $duration;
+  animation-duration: $duration;
+}

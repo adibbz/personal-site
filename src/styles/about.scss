@@ -1,0 +1,40 @@
+@import 'variables';
+
+.about-wrapper {
+  background: #475B63;
+  height: 100vh;
+  overflow: auto;
+
+  #main {
+    width: 70%;
+    padding: 4rem 4rem 4rem 0;
+    color: #fff;
+    margin: 0 auto;
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: .5rem;
+    }
+
+    h5 {
+      margin-top: 2rem;
+      margin-bottom: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin-top: .25rem;
+    }
+
+    .line {
+      margin: 0 0 15px 0;
+      width: 5vw;
+    }
+
+    .btn {
+      margin: 2rem 0;
+    }
+  }
+}
