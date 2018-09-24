@@ -1,0 +1,73 @@
+@import 'variables';
+
+.workpage-wrapper {
+	background: #21282f;
+	height: 100%;
+	overflow: auto;
+
+	#main {
+		width: 75%;
+		margin: 0 auto;
+		padding: 4rem 0;
+		color: #fff;
+
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 400;
+      margin-bottom: .5rem;
+    }
+
+    h5 {
+      margin-top: 2rem;
+      margin-bottom: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+		.line {
+			margin: 0 0 35px 0;
+			width: 5vw;
+		}
+		
+		#work-list {
+			
+			.work-item {
+				margin-bottom: 45px;
+
+				h5 {
+					color: #fff;
+					font-family: $font-stack-primary;
+
+					a {
+						margin-left: 10px;
+
+						i {
+							color: $green;
+							font-size: .8em;
+							display: inline-block;
+							-webkit-transition: all 0.3s ease-in-out 0s;
+							-moz-transition: all 0.3s ease-in-out 0s;
+							transition: all 0.3s ease-in-out 0s;
+
+							&:hover {
+								-moz-transform: translateY(-3px);
+								-o-transform: translateY(-3px);
+								-ms-transform: translateY(-3px);
+								-webkit-transform: translateY(-3px);
+								transform: translateY(-3px);
+							}
+						}
+					}
+				}
+
+				p {
+					line-height: 1.3;
+					color: $gray;
+					width: 75%;
+				}
+			}
+		}
+
+	}
+}

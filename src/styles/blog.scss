@@ -1,0 +1,24 @@
+@import 'variables';
+
+.article-box {
+  border-bottom: 1px solid gray;
+  margin-bottom: 2em;
+}
+.title {
+  font-size: 1.5em;
+  color: white;
+  margin-bottom: 0px;
+}
+.author, .date{
+  margin: 0px;
+}
+.date{
+  color: $green;
+}
+.time {
+  color: #7b7c7e;
+}
+.excerpt{
+  margin-top: 0.6em;   
+  margin-bottom: 2em;
+}

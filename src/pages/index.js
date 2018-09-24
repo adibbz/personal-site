@@ -1,10 +1,11 @@
 import React from 'react'
-import "../styles/home.scss"
+import '../styles/home.scss'
 import Layout from '../components/layout'
 import SocialList from '../components/social-list'
 
 
 class IndexPage extends React.Component {
+    
   render() {
     return (
         <Layout>
