@@ -13,7 +13,7 @@ const BlogPage = ({ data }) => {
             {data.allMarkdownRemark.edges.map(({ node }) => (
               <div key={node.id} className="article-box">
                 <Link to={node.fields.slug} style={{ textDecoration: 'none', color: 'inherit' }}>
-                  <h3 className="title">{node.frontmatter.title}</h3>
+                  <h3 className="title">{node.frontmatter.title} <i className="icon-arrow-right-circle"></i></h3>
                 </Link>
                 <p className="author">{node.frontmatter.author}</p>
                 <p className="date">{node.frontmatter.date} <span className="time">{node.timeToRead} min read</span></p>

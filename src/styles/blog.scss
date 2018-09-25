@@ -8,6 +8,17 @@
   font-size: 1.5em;
   color: white;
   margin-bottom: 0px;
+
+  i {
+    font-size: 14px;
+    transition: margin .3s ease-in-out;
+  }
+
+  &:hover {
+    i {
+      margin-left: 2px;
+    }
+  }
 }
 .author, .date{
   margin: 0px;
@@ -21,4 +32,39 @@
 .excerpt{
   margin-top: 0.6em;   
   margin-bottom: 2em;
+}
+
+// POSTS
+
+.blog-wrapper {
+  background: #475B63;
+  height: 100vh;
+  overflow: auto;
+
+  #main {
+    width: 70%;
+    padding: 4rem 4rem 4rem 0;
+    color: #fff;
+    margin: 0 auto;
+
+    .post {
+
+      > a i {
+        font-size: 11px;
+      }
+
+      h1 {
+        font-size: 30px;
+        margin-bottom: 5px;
+      }
+
+      h4 {
+        margin-top: 0;
+
+        span {
+          color: $green;
+        }
+      }
+    }
+  }
 }
