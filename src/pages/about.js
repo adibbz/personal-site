@@ -6,14 +6,28 @@ class AboutIndex extends React.Component {
   render() {
     return (
       <Layout>
-      <div className="about-wrapper">
-        <div id="main">
-          <div className="content">
-            <h1>About</h1>
-            <hr className="line"/>
+        <div className="about-wrapper">
+          <div id="main">
+            <div className="content">
+              <h1>About</h1>
+              <hr className="line" />
               <p>Hello! I am Andrew Dibb, a front end developer from Nashville, TN, who is passionate about all things front end web. I'm  a self-starter who is very enthusiastic about learning and have a strong work ethic. <a href="mailto:andrewdibb@gmail.com">Email</a> me to talk about working together or just say hello!</p>
               <h5>Things I use:</h5>
-              <p>Angular, TypeScript, Ionic, .NET, HTML, SCSS/CSS, Javascript, Foundation/Bootstrap, Wordpress, Git, Command Line, Sketch, Photoshop</p>
+              <ul className="cols">
+                <li>Angular</li>
+                <li>TypeScript</li>
+                <li>Ionic</li>
+                <li>.NET</li>
+                <li>HTML</li>
+                <li>SCSS/CSS</li>
+                <li>Javascript</li>
+                <li>Foundation/Bootstrap</li>
+                <li>Wordpress</li>
+                <li>Git</li>
+                <li>Command Line</li>
+                <li>Sketch</li>
+                <li>Photoshop</li>
+              </ul>
               <h5>Things I'm Learning:</h5>
               <p>Programming, Javascript core mechanisms, MEAN(MongoDB, Express, Angular, Node) Stack</p>
               <h5>In my free time:</h5>
@@ -27,9 +41,9 @@ class AboutIndex extends React.Component {
             </div>
           </div>
         </div>
-        </Layout>
-        )
-      }
-    }
-    
+      </Layout>
+    )
+  }
+}
+
 export default AboutIndex

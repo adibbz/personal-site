@@ -12,6 +12,7 @@
     margin: 0 auto;
 
     h1 {
+      font-family: $font-stack-secondary;
       font-size: 3rem;
       font-weight: 400;
       margin-bottom: .5rem;
@@ -20,6 +21,7 @@
     h5 {
       margin-top: 2rem;
       margin-bottom: 0;
+      font-family: $font-stack-secondary;
       font-size: 1.25rem;
       font-weight: 700;
     }
@@ -35,6 +37,30 @@
 
     .btn {
       margin: 2rem 0;
+    }
+
+    ul.cols {
+      display: grid;
+      grid-template-columns: minmax(140px, 200px) minmax(140px, 200px);
+      overflow: hidden;
+      list-style: none;
+      padding: 0;
+      margin-left: 0;
+
+      li {
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 10px;
+
+        &:before {
+          content: "▹";
+          position: absolute;
+          left: 0px;
+          color: $green;
+          font-size: 14px;
+          line-height: 25px;
+        }
+      }
     }
   }
 }
