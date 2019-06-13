@@ -10,25 +10,25 @@ export default (props) => {
         return <nav id="site-navigation" role="navigation" className={location.pathname === '/' ? 'homeNav' : ''}>
           <ul>
             <li>
-              <Link to="/">
+              <Link to="/" activeClassName="active">
                 <span>+ home</span>
               </Link>
             </li>
             <li>
-              <Link to="/about">
+              <Link to="/about" activeClassName="active">
                 <span>+ about</span>
               </Link>
             </li>
             <li>
-              <Link to="/work">
+              <Link to="/work" activeClassName="active">
                 <span>+ work</span>
               </Link>
             </li>
-            <li>
-              <Link to="/blog">
+            {/* <li>
+              <Link to="/blog" activeClassName="active">
                 <span>+ blog</span>
               </Link>
-            </li>
+            </li> */}
           </ul>
         </nav>
       }}

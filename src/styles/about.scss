@@ -52,6 +52,10 @@
         padding-left: 20px;
         margin-bottom: 10px;
 
+        br {
+          display: none;
+        }
+
         &:before {
           content: "▹";
           position: absolute;
@@ -63,4 +67,31 @@
       }
     }
   }
+}
+
+
+/*-----------------------------------------------------
+|	Mobile 
+-----------------------------------------------------*/
+@media (max-width: 768px) {
+
+	.about-wrapper {
+    height: 100%;
+    padding-bottom: 50px;
+
+    #main {
+			width: 85%;
+      padding: 1rem 0;
+      
+      .line {
+        width: 20vw;
+        margin-bottom: 35px;
+			}
+		
+			ul.cols li br {
+        display: block;
+			}
+		}
+  }
+
 }

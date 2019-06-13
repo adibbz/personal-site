@@ -72,3 +72,33 @@
 
 	}
 }
+
+
+/*-----------------------------------------------------
+|	Mobile 
+-----------------------------------------------------*/
+@media (max-width: 768px) {
+
+	.workpage-wrapper {
+
+    #main {
+			width: 85%;
+			padding-top: 1rem;
+
+			.line {
+				width: 20vw;
+			}
+		
+			#work-list {
+
+				.work-item {
+
+					p {
+						width: 100%;
+					}
+				}
+			}
+		}
+  }
+
+}

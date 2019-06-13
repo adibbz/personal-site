@@ -1,11 +1,13 @@
 import React from 'react'
 import '../styles/about.scss'
 import Layout from '../components/layout'
+import { Helmet } from 'react-helmet'
 
 class AboutIndex extends React.Component {
   render() {
     return (
       <Layout>
+        <Helmet title="Andrew Dibb | About"></Helmet>
         <div className="about-wrapper">
           <div id="main">
             <div className="content">
@@ -21,7 +23,7 @@ class AboutIndex extends React.Component {
                 <li>HTML</li>
                 <li>SCSS/CSS</li>
                 <li>Javascript</li>
-                <li>Foundation/Bootstrap</li>
+                <li>Foundation/<br></br>Bootstrap</li>
                 <li>Wordpress</li>
                 <li>Git</li>
                 <li>Command Line</li>
@@ -29,7 +31,7 @@ class AboutIndex extends React.Component {
                 <li>Photoshop</li>
               </ul>
               <h5>Things I'm Learning:</h5>
-              <p>Programming, Javascript core mechanisms, MEAN(MongoDB, Express, Angular, Node) Stack</p>
+              <p>React, React Native, Project management</p>
               <h5>In my free time:</h5>
               <ul>
                 <li>Running and Working Out</li>
