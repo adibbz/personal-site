@@ -2,6 +2,7 @@ import React from 'react'
 import Layout from '../components/layout'
 import '../styles/work.scss'
 import { Helmet } from 'react-helmet'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class WorkIndex extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class WorkIndex extends React.Component {
         <Helmet title="Andrew Dibb | Work"></Helmet>
         <div className="workpage-wrapper">
           <div id="main">
-            <div className="content">
+            <ScrollAnimation className="content" animateIn="fadeIn" animateOnce={true} duration={2}>
               <h1>Work</h1>
               <hr className="line" />
               <section id="work-list">
@@ -31,7 +32,7 @@ class WorkIndex extends React.Component {
                   <p>Covert PSD designs into code. Utilize Wordpress CMS. Built on top of Foundation Starter Theme with SCSS/CSS and Gulp. Custom HTML and PHP page templates.</p>
                 </div>
               </section>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </Layout>

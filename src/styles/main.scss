@@ -1,5 +1,7 @@
+@import "../../node_modules/animate.css/animate.min";
 @import 'variables';
 @import 'mixins';
+
 html,
 body {
   background-color: #fff;
@@ -206,13 +208,6 @@ ul {
       ul li a span {
         color: #fff;
       }
-    }
-  }
-
-  .about-wrapper, .workpage-wrapper {
-
-    #main {
-      width: 100%;
     }
   }
 

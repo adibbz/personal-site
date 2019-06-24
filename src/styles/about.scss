@@ -88,8 +88,12 @@
         margin-bottom: 35px;
 			}
 		
-			ul.cols li br {
-        display: block;
+			ul.cols li {
+        line-height: 1.1;
+        
+        br {
+          display: block;
+        }
 			}
 		}
   }

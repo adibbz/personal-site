@@ -2,6 +2,7 @@ import React from 'react'
 import '../styles/about.scss'
 import Layout from '../components/layout'
 import { Helmet } from 'react-helmet'
+import ScrollAnimation from 'react-animate-on-scroll';
 
 class AboutIndex extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class AboutIndex extends React.Component {
         <Helmet title="Andrew Dibb | About"></Helmet>
         <div className="about-wrapper">
           <div id="main">
-            <div className="content">
+            <ScrollAnimation className="content" animateIn="fadeIn" animateOnce={true} duration={2}>
               <h1>About</h1>
               <hr className="line" />
               <p>Hello! I am Andrew Dibb, a front end developer from Nashville, TN, who is passionate about all things front end web. I'm  a self-starter who is very enthusiastic about learning and have a strong work ethic. <a href="mailto:andrewdibb@gmail.com">Email</a> me to talk about working together or just say hello!</p>
@@ -40,7 +41,7 @@ class AboutIndex extends React.Component {
                 <li>Finding new music and playing guitar</li>
               </ul>
               <a className="btn" href="https://drive.google.com/open?id=0B7T-FgaP1kHeQXg4YUJWYVlhYms" target="_blank" rel="noopener noreferrer">Download Résumé</a>
-            </div>
+            </ScrollAnimation>
           </div>
         </div>
       </Layout>
