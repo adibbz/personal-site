@@ -19,20 +19,18 @@ class AboutIndex extends React.Component {
               <ul className="cols">
                 <li>Angular</li>
                 <li>TypeScript</li>
+                <li>React</li>
                 <li>Ionic</li>
+                <li>React Native</li>
                 <li>.NET</li>
-                <li>HTML</li>
-                <li>SCSS/CSS</li>
-                <li>Javascript</li>
-                <li>Foundation/<br></br>Bootstrap</li>
                 <li>Wordpress</li>
+                <li>Foundation/<br></br>Bootstrap</li>
                 <li>Git</li>
-                <li>Command Line</li>
                 <li>Sketch</li>
                 <li>Photoshop</li>
               </ul>
-              <h5>Things I'm Learning:</h5>
-              <p>React, React Native, Project management</p>
+              {/* <h5>Things I'm Learning:</h5>
+              <p>React, React Native, Project management</p> */}
               <h5>In my free time:</h5>
               <ul>
                 <li>Running and Working Out</li>

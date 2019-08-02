@@ -12,6 +12,10 @@ body {
   -webkit-overflow-scrolling: touch;
   -webkit-font-smoothing: antialiased;
   height: 100%;
+
+  #___gatsby, div[role="group"][tabindex]  {
+    height: 100%;
+  }
 }
 
 a {
