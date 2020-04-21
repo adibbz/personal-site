@@ -17,7 +17,7 @@ class WorkIndex extends React.Component {
               <section id="work-list">
                 <div className="work-item">
                   <h5>01. Current Work</h5>
-                  <p>Contact me to learn more about what I'm currently working on. I work on a team that foucses on whole systems development for clients using various technologies ranging from Angular/TypeScript front-ends, ASP.NET backends, Windows Services, AWS Lambda, SNS, SQS for automation, and Ionic 3 for cross-platform mobile development.</p>
+                  <p>Contact me to learn more about what I'm currently working on. I work on a team that foucses on whole systems development for clients using various technologies ranging from Angular/TypeScript and React front-ends, ASP.NET and Node.js backends, Windows Services, AWS Lambda, SNS, SQS for automation, React Native and Ionic 3 for cross-platform mobile development.</p>
                 </div>
                 <div className="work-item">
                   <h5>02. Custom Website built for G/O Digital<a href="https://www.ridgeviewcommunitynetwork.org/" target="_blank" rel="noopener noreferrer"><i className="icon-link"></i></a></h5>
