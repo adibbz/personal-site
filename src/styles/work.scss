@@ -1,7 +1,7 @@
 @import 'variables';
 
 .workpage-wrapper {
-	background: #21282f;
+	//background: #21282f;
 	height: 100%;
 	overflow: auto;
 
@@ -9,8 +9,6 @@
 		width: 75%;
 		margin: 0 auto;
 		padding: 4rem 0;
-		color: #fff;
-
 
     h1 {
 			font-family: $font-stack-secondary;
@@ -37,7 +35,6 @@
 				margin-bottom: 45px;
 
 				h5 {
-					color: #fff;
 					font-family: $font-stack-primary;
 
 					a {
@@ -101,4 +98,17 @@
 		}
   }
 
+}
+
+/*-----------------------------------------------------
+|	Dark Mode 
+-----------------------------------------------------*/
+body.dark-mode {
+  .workpage-wrapper {
+		background-color: #10171d;
+
+    #main .content h1 {
+      color: #dfdfdf;
+    }
+  }
 }

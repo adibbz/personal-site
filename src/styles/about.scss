@@ -1,14 +1,13 @@
 @import 'variables';
 
 .about-wrapper {
-  background: #475B63;
+ // background: #475B63;
   height: 100vh;
   overflow: auto;
 
   #main {
     width: 70%;
     padding: 4rem 4rem 4rem 0;
-    color: #fff;
     margin: 0 auto;
 
     h1 {
@@ -98,4 +97,17 @@
 		}
   }
 
+}
+
+/*-----------------------------------------------------
+|	Dark Mode 
+-----------------------------------------------------*/
+body.dark-mode {
+  .about-wrapper {
+    background-color: #10171d;
+
+    #main .content h1 {
+      color: #dfdfdf;
+    }
+  }
 }

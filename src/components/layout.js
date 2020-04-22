@@ -5,6 +5,7 @@ import { StaticQuery, graphql } from 'gatsby'
 
 import '../styles/main.scss'
 import Navigation from '../components/navigation'
+import DarkModeToggle from './darkModeToggle.js'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -28,7 +29,8 @@ const Layout = ({ children }) => (
         >
           <html lang="en" />
         </Helmet>
-        <Navigation></Navigation>
+          <DarkModeToggle />
+          <Navigation></Navigation>
           {children}
       </>
     )}
