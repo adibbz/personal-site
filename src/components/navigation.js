@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import { Location } from '@reach/router';
-import DarkModeToggle from './darkModeToggle.js'
 
 export default (props) => {
 
