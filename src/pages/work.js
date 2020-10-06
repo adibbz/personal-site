@@ -16,16 +16,16 @@ class WorkIndex extends React.Component {
               <hr className="line" />
               <section id="work-list">
                 <div className="work-item">
-                  <h5>01. Current Work</h5>
-                  <p>Contact me to learn more about what I'm currently working on. I work on a team that foucses on whole systems development for clients using various technologies ranging from Angular/TypeScript and React front-ends, ASP.NET and Node.js backends, Windows Services, AWS Lambda, SNS, SQS for automation, React Native and Ionic 3 for cross-platform mobile development.</p>
+                  <h5>01. Single Music Work</h5>
+                  <p>Primary developer for all user interfaces including main Artist Admin Dashboard, fan-facing BoostLink landing pages, Shopify product templates, transactional email templates, and more. Using Angular, Typescript, Redux/NgRx, SCSS/Bootstrap and more. Check out our product: <a href="https://singlemusic.com/" target="_blank">https://singlemusic.com/</a> </p>
                 </div>
                 <div className="work-item">
-                  <h5>02. Custom Website - Sample<a href="http://ec2-52-24-120-57.us-west-2.compute.amazonaws.com/" target="_blank" rel="noopener noreferrer"><i className="icon-link"></i></a></h5>
+                  <h5>02. ResultStack Work</h5>
+                  <p>Worked on a team that foucsed on whole systems development for various clients (Including a national restaurant chain, local food startup and more) using various technologies ranging from Angular/TypeScript and React front-ends, ASP.NET and Node.js backends, Windows Services, AWS Lambda, SNS, SQS for automation, React Native and Ionic 3 for cross-platform mobile development.</p>
+                </div>
+                <div className="work-item">
+                  <h5>03. Custom Worpdress Website - Sample<a href="http://ec2-52-24-120-57.us-west-2.compute.amazonaws.com/" target="_blank" rel="noopener noreferrer"><i className="icon-link"></i></a></h5>
                   <p>This is a sample site to display custom functionality built for client. Built custom employee search using custom posts, custom fields and AJAX. Search by name or zipcode and an AJAX request is made to search for custom posts and return the results in a popup. Utilize Wordpress CMS. Built on top of Foundation Starter Theme with SCSS/CSS and Gulp. Custom HTML and PHP page templates.</p>
-                </div>
-                <div className="work-item">
-                  <h5>03. Custom Website built for G/O Digital<a href="http://www.principalcharityclassic.com/" target="_blank" rel="noopener noreferrer"><i className="icon-link"></i></a></h5>
-                  <p>Covert PSD designs into code. Utilize Wordpress CMS. Built on top of Foundation Starter Theme with SCSS/CSS and Gulp. Custom HTML and PHP page templates.</p>
                 </div>
               </section>
             </ScrollAnimation>
