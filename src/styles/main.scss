@@ -121,8 +121,8 @@ ul {
 -----------------------------------------------------*/
 #site-navigation {
   position: fixed;
-  right: 40px;
-  top: 60px;
+  right: 60px;
+  top: 85px;
   -webkit-animation-duration: 1s;
   -moz-animation-duration: 1s;
   // visibility: hidden;
@@ -240,8 +240,8 @@ body.dark-mode {
   display: flex;
   margin: 0 auto;
   position: fixed;
-  top: 15px;
-  right: 12px;
+  top: 45px;
+  right: 45px;
 
   & > button {
     font-size: 1.2em;

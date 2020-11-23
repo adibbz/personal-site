@@ -5,65 +5,82 @@
 |	Content - #main
 -----------------------------------------------------*/
 .home-wrapper {
-  height: 100vh;
+  height: calc(100vh - 50px);
   display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 25px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAKUlEQVQ4jWNgGAWDHzRAMU7ASEAzPj4DAwMDAxMJriELNOCyeRQMJgAAPMMDBM0EDc8AAAAASUVORK5CYII=),var(--secondary,transparent);
+  background-size: 8px;
 
-  .left {
-    position: fixed;
-    bottom: 10px;
-    left: 10px;
-    color: $green;
+  .container {
+    background: white;
+    border: 5px solid #000;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-    &:after {
-      content: "";
-      display: block;
-      width: 1px;
-      height: 100vh;
-      background-color: $green;
-      margin: 0px auto;
-      transition: height ease-in-out .5s;
+    .left {
+      position: fixed;
+      bottom: 10px;
+      left: 10px;
+      color: $green;
+
+      &:after {
+        content: "";
+        display: block;
+        width: 1px;
+        height: 100vh;
+        background-color: $green;
+        margin: 0px auto;
+        transition: height ease-in-out .5s;
+      }
     }
-  }
 
-  #main {
-    padding: 20px;
+    #main {
+      padding: 20px;
 
-    .content {
-      text-align: center;
+      .content {
+        text-align: center;
 
-      h1 {
-        font-family: $font-stack-secondary;
-        font-size: 4em;
-        font-weight: 400;
-        color: #000;
-        line-height: 1;
-        margin: 0;
-        @include animationDelay(.3s);
-        @include animationDuration(1s);
-      }
-      
-      .line {
-        margin: 1.25rem auto;
-      }
+        h1 {
+          font-family: $font-stack-secondary;
+          font-size: 4em;
+          font-weight: 400;
+          color: #000;
+          line-height: 1;
+          margin: 0;
+          @include animationDelay(.3s);
+          @include animationDuration(1s);
+        }
+        
+        .line {
+          margin: 1.25rem auto;
+        }
 
-      h4 {
-        color: $gray;
-        font-family: $font-stack-primary;
-        font-size: 1.3em;
-        font-weight: 400;
-        margin: 0;
-        margin-bottom: 1em;
-        @include animationDelay(.75s);
-        @include animationDuration(1.25s);
+        h4 {
+          color: $gray;
+          font-family: $font-stack-primary;
+          font-size: 1.3em;
+          font-weight: 400;
+          margin: 0;
+          margin-bottom: 1em;
+          @include animationDelay(.75s);
+          @include animationDuration(1.25s);
+        }
       }
     }
   }
 }
 
 body.dark-mode {
-  .home-wrapper #main .content h1 {
-    color: #dfdfdf;
+  .home-wrapper {
+    .container {
+      background: #10171d;
+      border-color: #333;
+
+      #main .content h1 {
+        color: #dfdfdf;
+      }
+    }
   }
 }
