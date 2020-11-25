@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 module.exports = {
   siteMetadata: {
     title: 'Andrew Dibb',
@@ -35,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-          bucketName: 'andrewdibb.com'
+          bucketName: process.env.S3_BUCKET_NAME
       },
     },
     {
