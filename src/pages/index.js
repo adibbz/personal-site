@@ -17,7 +17,7 @@ class IndexPage extends React.Component {
                             <ScrollAnimation className="content" animateIn="fadeIn" animateOnce={true} duration={2}>
                                 <h1>Andrew Dibb</h1>
                                 <hr className="line" />
-                                <h4>I am a front end developer</h4>
+                                <h4>UX Engineer</h4>
                                 <SocialList />
                             </ScrollAnimation>
                         </div>

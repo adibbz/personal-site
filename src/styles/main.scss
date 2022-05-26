@@ -13,7 +13,7 @@ body {
   -webkit-font-smoothing: antialiased;
   height: 100%;
 
-  #___gatsby, div[role="group"][tabindex]  {
+  #___gatsby, div[role="group"][tabindex], #gatsby-focus-wrapper  {
     height: 100%;
   }
 }
@@ -257,6 +257,12 @@ body.dark-mode {
     &:focus {
       outline: none;
     }
+  }
+}
+
+@media (max-width: 768px) {
+  .dark-mode-toggle {
+ display: none;
   }
 }
 

@@ -73,6 +73,10 @@
 }
 
 body.dark-mode {
+  background: $green;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, $green, #3ca94a);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, $green, #3ca94a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
   .home-wrapper {
     .container {
       background: #10171d;
