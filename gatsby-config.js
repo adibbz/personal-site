@@ -3,7 +3,7 @@ require("dotenv").config();
 module.exports = {
   siteMetadata: {
     title: 'Andrew Dibb',
-    description: 'Andrew Dibb, a front end developer from Nashville, TN, who is passionate about all things front end web.'
+    description: 'Andrew Dibb, a UX Engineer from Nashville, TN, who is passionate about all things front end web.'
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -37,7 +37,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-s3`,
       options: {
-          bucketName: process.env.S3_BUCKET_NAME
+        bucketName: process.env.S3_BUCKET_NAME,
+        acl: null
       },
     },
     {
