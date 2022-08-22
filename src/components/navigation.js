@@ -2,8 +2,7 @@ import React from 'react'
 import Link from 'gatsby-link'
 import { Location } from '@reach/router';
 
-export default (props) => {
-
+const Navigation = (props) => {
   return (
     <Location>
       {({ location }) => {
@@ -35,3 +34,4 @@ export default (props) => {
     </Location>
   )
 }
+export default Navigation;

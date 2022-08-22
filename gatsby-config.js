@@ -40,15 +40,6 @@ module.exports = {
         bucketName: process.env.S3_BUCKET_NAME,
         acl: null
       },
-    },
-    {
-      resolve: "gatsby-plugin-use-dark-mode",
-      options: {
-         classNameDark: "dark-mode",
-         classNameLight: "light-mode",
-         storageKey: "darkMode",
-         minify: true,
-      },
     }
   ],
 }

@@ -4,8 +4,6 @@ import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import '../styles/main.scss'
-import Navigation from '../components/navigation'
-import DarkModeToggle from './darkModeToggle.js'
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -24,13 +22,11 @@ const Layout = ({ children }) => (
           title={`${data.site.siteMetadata.title}`}
           meta={[
             { name: 'description', content: data.site.siteMetadata.title },
-            { name: 'keywords', content: 'web development, front-end' },
+            { name: 'keywords', content: 'web development, front-end, ui, ui engineer' },
           ]}
         >
           <html lang="en" />
         </Helmet>
-          <DarkModeToggle />
-          <Navigation></Navigation>
           {children}
       </>
     )}

@@ -3,7 +3,7 @@ import Link from 'gatsby-link'
 import '../styles/blog.scss';
 import { graphql } from 'gatsby'
 
-export default ({ data }) => {
+const PostTemplate = ({ data }) => {
   const post = data.markdownRemark;
   return (
     <div className="blog-wrapper">
@@ -18,6 +18,7 @@ export default ({ data }) => {
     </div>
   );
 };
+export default PostTemplate;
 
 export const query = graphql`
   query PostQuery($slug: String!) {
