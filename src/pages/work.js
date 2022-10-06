@@ -23,10 +23,6 @@ class WorkIndex extends React.Component {
                   <h5>02. ResultStack Work</h5>
                   <p>Worked on a team that foucsed on whole systems development for various clients (Including a national restaurant chain, local food startup and more) using various technologies ranging from Angular/TypeScript and React front-ends, ASP.NET and Node.js backends, Windows Services, AWS Lambda, SNS, SQS for automation, React Native and Ionic 3 for cross-platform mobile development.</p>
                 </div>
-                <div className="work-item">
-                  <h5>03. Custom Worpdress Website - Sample<a href="http://ec2-52-24-120-57.us-west-2.compute.amazonaws.com/" target="_blank" rel="noopener noreferrer"><i className="icon-link"></i></a></h5>
-                  <p>This is a sample site to display custom functionality built for client. Built custom employee search using custom posts, custom fields and AJAX. Search by name or zipcode and an AJAX request is made to search for custom posts and return the results in a popup. Utilize Wordpress CMS. Built on top of Foundation Starter Theme with SCSS/CSS and Gulp. Custom HTML and PHP page templates.</p>
-                </div>
               </section>
             </ScrollAnimation>
           </div>
