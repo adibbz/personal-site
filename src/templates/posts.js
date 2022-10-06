@@ -1,6 +1,7 @@
 import React from "react";
 import Link from 'gatsby-link'
-import '../styles/blog.scss'
+import '../styles/blog.scss';
+import { graphql } from 'gatsby'
 
 export default ({ data }) => {
   const post = data.markdownRemark;
