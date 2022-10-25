@@ -17,7 +17,7 @@ class WorkIndex extends React.Component {
               <section id="work-list">
                 <div className="work-item">
                   <h5>01. Single Music Work</h5>
-                  <p>Primary developer for all user interfaces including main Artist Admin Dashboard, fan-facing BoostLink landing pages, Shopify product templates, transactional email templates, and more. Using Angular, Typescript, Redux/NgRx, SCSS/Bootstrap and more. Check out our product: <a href="https://singlemusic.com/" target="_blank">https://singlemusic.com/</a> </p>
+                  <p>Primary developer for all user interfaces including main Artist Admin Dashboard, fan-facing BoostLink landing pages, Shopify product templates, transactional email templates, and more. Using Angular, Typescript, Redux/NgRx, SCSS/Bootstrap and more. Check out our product: <a href="https://singlemusic.com/" target="_blank" rel="noopener noreferrer">https://singlemusic.com/</a> </p>
                 </div>
                 <div className="work-item">
                   <h5>02. ResultStack Work</h5>
