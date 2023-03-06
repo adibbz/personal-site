@@ -40,17 +40,15 @@ class IndexPage extends React.Component {
                                 </span>
                                 <button className={"icon info " + (this.state.infoOpen ? "show-text-block" : "")}
                                       onClick={this.handleInfoClick}>
-                                    <FontAwesomeIcon icon={faCircleInfo} />
+                                    <FontAwesomeIcon icon={!this.state.infoOpen ? faCircleInfo : faTimes} />
                                     <section className="text-block animate__animated animate__fadeIn">
-                                        <FontAwesomeIcon icon={faTimes} onClick={this.handleInfoClick} className="close-icon" />
                                         <p>Hello! I am Andrew Dibb, a UX engineer from Nashville, TN, who is passionate about all things front end web. I'm a self-starter who is very enthusiastic about learning and have a strong work ethic. Email me to talk about working together or just say hello!</p>
                                     </section>
                                 </button>
                                 <button className={"icon work " + (this.state.workOpen ? "show-text-block" : "")}
                                       onClick={this.handleWorkClick}>
-                                    <FontAwesomeIcon icon={faBarsStaggered} />
+                                    <FontAwesomeIcon icon={!this.state.workOpen ? faBarsStaggered : faTimes} />
                                     <section className="text-block animate__animated animate__fadeIn">
-                                        <FontAwesomeIcon icon={faTimes} onClick={this.handleWorkClick} className="close-icon" />
                                         <h4>Currently:</h4>
                                         <h2>Single Inc.</h2>
                                         <p>Primary developer for all user interfaces including main Artist Admin Dashboard, fan-facing BoostLink landing pages, Shopify product templates, transactional email templates, and more. Using Angular, Typescript, Redux/NgRx, SCSS/Bootstrap and more. Check out our <a href="https://single.xyz" target="_blank" rel="noopener noreferrer">product</a>.</p>
