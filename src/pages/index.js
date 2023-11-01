@@ -54,7 +54,7 @@ class IndexPage extends React.Component {
                                         <p>Primary developer for all user interfaces including main Artist Admin Dashboard, fan-facing BoostLink landing pages, Shopify product templates, transactional email templates, and more. Using Angular, Typescript, Redux/NgRx, SCSS/Bootstrap and more. Check out our <a href="https://single.xyz" target="_blank" rel="noopener noreferrer">product</a>.</p>
 
                                         <div class="resume-block">
-                                            <a href="https://drive.google.com/open?id=0B7T-FgaP1kHeQXg4YUJWYVlhYms" target="_blank" rel="noopener noreferrer">
+                                            <a href="https://drive.google.com/file/d/0B7T-FgaP1kHeQXg4YUJWYVlhYms/view?usp=sharing&resourcekey=0-hbrSWZUO_TQkOI_JxX-KQQ" target="_blank" rel="noopener noreferrer">
                                                 <span>View my full résumé</span>
                                                  <FontAwesomeIcon icon={faExternalLink} />
                                             </a>
