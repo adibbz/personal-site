@@ -34,7 +34,7 @@
     "develop": "gatsby develop",
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "nvm use 14.17.0 && npm run build && npx -n \"-r dotenv/config\" gatsby-plugin-s3 deploy"
+    "deploy": "npm run build && npx -n \"-r dotenv/config\" gatsby-plugin-s3 deploy"
   },
   "devDependencies": {
     "prettier": "^1.14.2"
