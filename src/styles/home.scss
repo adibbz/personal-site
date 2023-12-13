@@ -59,7 +59,7 @@
           .name {
             animation: float 6s ease-in-out infinite;
             position: relative;
-            z-index: -2;
+            z-index: 0;
 
             h1 {
               font-family: $font-stack-secondary;
@@ -85,6 +85,7 @@
 
           .icon {
             position: absolute;
+            z-index: 2;
             background: $green;
             color: white;
             width: 52px;
@@ -97,85 +98,11 @@
             align-items: center;
             justify-content: center;
             font-size: 1.6em;
-            cursor: inherit;
+            cursor: pointer;
             border-radius: 48% 52% 68% 32% / 42% 28% 72% 58%;
             animation: 
               blobber 30s 0s linear infinite,
               cobler 30s 0s linear infinite alternate;
-
-            &.info {
-              left: 8%;
-              top: 8%;
-
-              .text-block {
-                left: 45%;
-                top: 45%;
-              }
-            }
-
-            &.work {
-              right: 20%;
-              top: 15%;
-
-              &.show-text-block {
-
-                .text-block {
-                  width: 32vw;
-                  right: 45%;
-                  top: 45%;
-                  text-align: left;
-
-                  h4 {
-                    margin-top: 0;
-                  }
-
-                  h2 {
-                    font-family: $font-stack-secondary;
-                    margin-bottom: 0;
-
-                    & + p {
-                      margin-top: 0;
-                    }
-                  }
-
-                  a {
-                    color: white;
-                    text-decoration: underline;
-                  }
-
-                  .resume-block {
-                    margin: 8px 0;
-
-                    a {
-                      display: inline-block;
-                      text-decoration: none;
-                      padding: 8px 16px;
-                      border: 2px solid white;
-                      border-radius: 4px;
-                      background: rgba(255,255,255,0.3);
-                      font-family: "Hind", sans-serif;
-                      cursor: inherit;
-                      position: relative;
-                      transition: all ease-in .5s;
-
-                      &:hover {
-                        svg {
-                          transform: translate(1px, -1px);
-                        }
-                        span {
-                          animation: fadeInUp .2s ease-in;
-                        }
-                      }
-
-                      span {
-                        margin-right: 8px;
-                        display: inline-block;
-                      }
-                    }
-                  }
-                }
-              }
-            }
 
             &.linkedIn {
               left: 15%;
@@ -192,30 +119,105 @@
               right: 15%;
               bottom: 35%;
             }
+          }
 
-            .text-block {
-              display: none;
+          .text-block-wrapper {
+            position: absolute;
+            z-index: 99999;
 
-              .close-icon {
-                display: none;
+            &.work-wrapper {
+              right: 20%;
+              top: 15%;
+
+              .text-block {
+                right: -29px;
+                top: 22px;
               }
             }
 
+            &.info-wrapper {
+              left: 8%;
+              top: 8%;
+
+              .text-block {
+                left: 23px;
+                top: 25px;
+              }
+            }
+
+            .text-block {
+              display: none;
+            }
+
+            .close-icon {
+              display: none;
+            }
+
             &.show-text-block {
-              border-radius: 50%;
-              animation: none;
 
               .text-block {
                 display: block;
                 position: absolute;
-                z-index: -1;
                 background: $green;
+                color: white;
                 border-radius: 4px;
                 padding: 20px;
                 width: 25vw;
                 font-size: 16px;
                 font-family: $font-stack-primary;
                 box-shadow: 0 0 10px rgba(20, 20, 20, 0.3);
+              }
+
+              .text-block {
+                width: 32vw;
+                text-align: left;
+
+                h4 {
+                  margin-top: 0;
+                }
+
+                h2 {
+                  font-family: $font-stack-secondary;
+                  margin-bottom: 0;
+
+                  & + p {
+                    margin-top: 0;
+                  }
+                }
+
+                a {
+                  color: white;
+                  text-decoration: underline;
+                }
+
+                .resume-block {
+                  margin: 8px 0;
+
+                  a {
+                    display: inline-block;
+                    text-decoration: none;
+                    padding: 8px 16px;
+                    border: 2px solid white;
+                    border-radius: 4px;
+                    background: rgba(255,255,255,0.3);
+                    font-family: "Hind", sans-serif;
+                    cursor: pointer;
+                    position: relative;
+                    transition: all ease-in .5s;
+                    &:hover {
+                      svg {
+                        transform: translate(1px, -1px);
+                      }
+                      span {
+                        animation: fadeInUp .2s ease-in;
+                      }
+                    }
+                    span {
+                      margin-right: 8px;
+                      display: inline-block;
+                    }
+                  }
+                }
               }
             }
           }
@@ -278,35 +280,47 @@ body.dark-mode {
       #main {
         .col {
           &.content {
-            .icon {
-                &.show-text-block, &.work.show-text-block {
-                  .text-block {
-                    width: calc(100vw - 40px);
-                    right: 0;
-                    left: 0;
-                    top: 0;
-                    bottom: 0;
-                    z-index: 99;
-                    position: fixed;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    border-radius: 0;
+            .text-block-wrapper.show-text-block {
+              top: 0;
+              right: 0;
+              left: 0;
+              bottom: 0;
 
-                    .close-icon {
-                      display: block;
-                      font-size: 22px;
-                      position: absolute;
-                      top: 10px;
-                      right: 10px;
-                      padding: 10px;
-                    }
+              & ~ .text-block-wrapper {
+                display: none;
+              }
 
-                    p {
-                      font-size: 20px;
-                    }
-                  }
+              .icon {
+                z-index: 99999999999;
+                top: 0;
+                right: 0;
+              }
+              .text-block {
+                width: calc(100vw - 40px);
+                right: 0;
+                left: 0;
+                top: 0;
+                bottom: 0;
+                z-index: 99;
+                position: fixed;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                border-radius: 0;
+
+                .close-icon {
+                  display: block;
+                  font-size: 22px;
+                  position: absolute;
+                  top: 10px;
+                  right: 10px;
+                  padding: 10px;
                 }
+
+                p {
+                  font-size: 20px;
+                }
+              }
             }
           }
 
@@ -320,7 +334,7 @@ body.dark-mode {
 }
 
 @media (max-width: 470px) {
-    .home-wrapper {
+  .home-wrapper {
     .container {
       #main {
         .col {
@@ -337,5 +351,5 @@ body.dark-mode {
         }
       }
     }
-    }
+  }
 }

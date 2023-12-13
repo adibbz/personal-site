@@ -35,32 +35,33 @@ class IndexPage extends React.Component {
                                     <h1>Andrew Dibb</h1>
                                     <h4>UI Engineer</h4>
                                 </div>
-                                <span>
-
-                                </span>
-                                <button className={"icon info " + (this.state.infoOpen ? "show-text-block" : "")}
-                                      onClick={this.handleInfoClick}>
-                                    <FontAwesomeIcon icon={!this.state.infoOpen ? faCircleInfo : faTimes} />
+                                <div className={"text-block-wrapper info-wrapper " + (this.state.infoOpen ? "show-text-block" : "")}>
+                                    <button className={"icon info " + (this.state.infoOpen ? "show-text-block" : "")}
+                                        onClick={this.handleInfoClick}>
+                                        <FontAwesomeIcon icon={!this.state.infoOpen ? faCircleInfo : faTimes} />
+                                    </button>
                                     <section className="text-block animate__animated animate__fadeIn">
                                         <p>Hello! I am Andrew Dibb, a UX engineer from Nashville, TN, who is passionate about all things front end web. I'm a self-starter who is very enthusiastic about learning and have a strong work ethic. Email me to talk about working together or just say hello!</p>
                                     </section>
-                                </button>
-                                <button className={"icon work " + (this.state.workOpen ? "show-text-block" : "")}
-                                      onClick={this.handleWorkClick}>
-                                    <FontAwesomeIcon icon={!this.state.workOpen ? faBarsStaggered : faTimes} />
+                                </div>
+                                <div className={"text-block-wrapper work-wrapper " + (this.state.workOpen ? "show-text-block" : "")}>
+                                    <button className={"icon work"}
+                                        onClick={this.handleWorkClick}>
+                                        <FontAwesomeIcon icon={!this.state.workOpen ? faBarsStaggered : faTimes} />
+                                    </button>
                                     <section className="text-block animate__animated animate__fadeIn">
                                         <h4>Currently:</h4>
                                         <h2>Single Inc.</h2>
-                                        <p>Primary developer for all user interfaces including main Artist Admin Dashboard, fan-facing BoostLink landing pages, Shopify product templates, transactional email templates, and more. Using Angular, Typescript, Redux/NgRx, SCSS/Bootstrap and more. Check out our <a href="https://single.xyz" target="_blank" rel="noopener noreferrer">product</a>.</p>
+                                        <p>Primary developer for all user interfaces including main Artist Admin Dashboard, fan-facing BoostLink landing pages, Shopify product templates, transactional email templates, and more. Using Angular, Typescript, NgRx, SCSS/Bootstrap and more. Check out our <a href="https://single.xyz" target="_blank" rel="noopener noreferrer">product</a>.</p>
 
                                         <div class="resume-block">
                                             <a href="https://drive.google.com/file/d/0B7T-FgaP1kHeQXg4YUJWYVlhYms/view?usp=sharing&resourcekey=0-hbrSWZUO_TQkOI_JxX-KQQ" target="_blank" rel="noopener noreferrer">
                                                 <span>View my full résumé</span>
-                                                 <FontAwesomeIcon icon={faExternalLink} />
+                                                <FontAwesomeIcon icon={faExternalLink} />
                                             </a>
                                         </div>
                                     </section>
-                                </button>
+                                </div>
                                 <a className="icon linkedIn" href="https://www.linkedin.com/in/adibb/" target="_blank" rel="noopener noreferrer">
                                     <FontAwesomeIcon icon={faLinkedinIn} />
                                 </a>
