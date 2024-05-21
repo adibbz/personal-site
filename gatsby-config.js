@@ -3,10 +3,9 @@ require("dotenv").config();
 module.exports = {
   siteMetadata: {
     title: 'Andrew Dibb',
-    description: 'Andrew Dibb, a UX Engineer from Nashville, TN, who is passionate about all things front end web.'
+    description: 'Andrew Dibb, a Front End Engineer from Nashville, TN, who is passionate about all things front end web.'
   },
   plugins: [
-    'gatsby-plugin-react-helmet',
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -31,7 +30,9 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-sass',
       options: {
-        includePaths: ['src/styles'],
+        sassOptions: {
+          includePaths: ['src/styles']
+        }
       },
     },
     {

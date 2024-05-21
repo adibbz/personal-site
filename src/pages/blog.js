@@ -4,7 +4,6 @@ import Layout from '../components/layout'
 import '../styles/blog.scss'
 
 const BlogPage = ({ data }) => {
-  console.log(data)
   return (
     <Layout>
       <div className="about-wrapper">
@@ -29,23 +28,23 @@ const BlogPage = ({ data }) => {
 export default BlogPage
 
 export const query = graphql`
-query HomePageQuery{
-          allMarkdownRemark(sort: {fields: [frontmatter___date], order: DESC}) {
-          totalCount
+query HomePageQuery {
+  allMarkdownRemark(sort: [{ frontmatter: { date: DESC } }]) {
+    totalCount
     edges {
-          node {
-        fields{
+      node {
+        fields {
           slug
         }
         frontmatter {
           title
           date
-        author
+          author
+        }
+        excerpt
+        timeToRead
       }
-      excerpt
-      timeToRead
     }
   }
-}
 }
 `

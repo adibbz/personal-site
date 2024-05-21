@@ -1,6 +1,5 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
 import { StaticQuery, graphql } from 'gatsby'
 
 import '../styles/main.scss'
@@ -18,19 +17,19 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Helmet
-          title={`${data.site.siteMetadata.title}`}
-          meta={[
-            { name: 'description', content: data.site.siteMetadata.title },
-            { name: 'keywords', content: 'web development, front-end, ui, ui engineer' },
-          ]}
-        >
-          <html lang="en" />
-        </Helmet>
           {children}
       </>
     )}
   />
+)
+
+export const Head = ({ data }) => (
+  <>
+    <html lang="en" />
+      <title>{data.site.siteMetadata.title}</title>
+      <meta name="description" content={data.site.siteMetadata.title} />
+      <meta name="keywords" content="web development, front-end, ui, ui engineer" />
+  </>
 )
 
 Layout.propTypes = {
